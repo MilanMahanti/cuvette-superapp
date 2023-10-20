@@ -1,10 +1,15 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import RegisterPage from "./pages/RegisterPage";
+import CategoryPage from "./pages/CategoryPage";
 
 function App() {
   return (
-    <div>
-      <RegisterPage />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/category" element={<CategoryPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
