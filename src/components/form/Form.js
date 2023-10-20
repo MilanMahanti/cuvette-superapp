@@ -1,6 +1,7 @@
 import styles from "./Form.module.css";
 import logo from "../../assets/logo.png";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const KEY = "UserData";
 function Form() {
@@ -12,6 +13,7 @@ function Form() {
     check: false,
   });
   const [errors, setErrors] = useState({});
+  const navigate = useNavigate();
   function handelChange(e) {
     setUserData({ ...userData, [e.target.name]: e.target.value });
   }
@@ -53,6 +55,7 @@ function Form() {
       email: "",
       check: false,
     });
+    navigate("/category");
   }
   return (
     <div className={styles.formside}>
@@ -123,13 +126,14 @@ function Form() {
           <p>
             By clicking on Sign up. you agree to Superapp
             <span className={styles.textgreen}>
+              {" "}
               Terms and Conditions of Use
             </span>
             <br />
             <br />
             To learn more about how Superapp collects, uses, shares and protects
             your personal data please head Superapp
-            <span className={styles.textgreen}>Privacy Policy</span>
+            <span className={styles.textgreen}> Privacy Policy</span>
           </p>
         </div>
       </div>

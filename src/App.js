@@ -6,7 +6,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/register" element={<RegisterPage />} />
+        <Route index element={<RegisterPage />} />
+
+        {/* <Route path="/register" element={<RegisterPage />} /> */}
         <Route path="/category" element={<CategoryPage />} />
       </Routes>
     </BrowserRouter>

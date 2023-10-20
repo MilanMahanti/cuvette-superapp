@@ -50,10 +50,10 @@
 .form input:not(:first-child) {
   margin-top: 2rem;
 }
-input:focus {
+.form input:focus {
   outline: 1px solid #6ea96f;
 }
-input::placeholder {
+.form input::placeholder {
   font-size: 1.4rem;
   color: #7c7c7c;
 }
@@ -63,7 +63,7 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-label {
+.form label {
   width: 100%;
   display: flex;
   gap: 1rem;
@@ -105,10 +105,15 @@ input[type="checkbox"] {
   font-weight: 400;
   color: #7c7c7c;
 }
+.footer p {
+  font-size: 1rem;
+}
 .textgreen {
   color: #72db73;
 }
 .error {
   color: red;
+  font-size: 1rem;
+
   text-align: left;
 }
