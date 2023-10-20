@@ -1,0 +1,114 @@
+.formside {
+  width: 50vw;
+  height: 100vh;
+  background-color: #1e1e1e;
+}
+.container {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.header img {
+  width: 15rem;
+}
+.headertext {
+  font-size: 1.8rem;
+  color: #fff;
+}
+.formcontainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.form input {
+  width: 100%;
+  background-color: #292929;
+  border: none;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  border-radius: 3px;
+  margin-bottom: 0.5rem;
+}
+.form input:not(:first-child) {
+  margin-top: 2rem;
+}
+input:focus {
+  outline: 1px solid #6ea96f;
+}
+input::placeholder {
+  font-size: 1.4rem;
+  color: #7c7c7c;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+label {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: #7c7c7c;
+  margin: 2rem 0 0.5rem 0;
+}
+.form label input[type="checkbox"] {
+  margin: 0;
+  width: 16px;
+  height: 16px;
+}
+.form label input[type="checkbox"]:focus {
+  outline: none;
+}
+input[type="checkbox"] {
+  accent-color: #72db73;
+}
+.button {
+  width: 100%;
+  display: block;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: #72db73;
+  border: none;
+  color: #fff;
+  border-radius: 3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+.button:hover {
+  background-color: #6ea96f;
+}
+
+.footer {
+  width: 80%;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #7c7c7c;
+}
+.textgreen {
+  color: #72db73;
+}
+.error {
+  color: red;
+  text-align: left;
+}

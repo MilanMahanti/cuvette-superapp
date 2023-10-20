@@ -1,0 +1,20 @@
+.sidebar {
+  width: 50vw;
+  height: 100vh;
+  background-image: url(../../assets/sidebar.png);
+  background-size: cover;
+}
+.heading {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 4.5rem;
+  line-height: 120%;
+  letter-spacing: 2%;
+}
+.text {
+  position: absolute;
+  max-width: 50rem;
+  bottom: 2rem;
+  left: 2rem;
+}
