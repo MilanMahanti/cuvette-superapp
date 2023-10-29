@@ -13,6 +13,7 @@ function CategorySidebar({ categories, setCategories, error }) {
           data={data}
           categories={categories}
           setCategories={setCategories}
+          color="#148a08"
           key={id}
         />
       ))}

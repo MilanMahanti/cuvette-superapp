@@ -11,6 +11,7 @@ import Category from "./Category";
 import styles from "./Categories.module.css";
 import CategorySidebar from "./CategorySidebar";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const categoriesList = [
   {
@@ -63,12 +64,14 @@ const KEY = "Categories";
 function Categories() {
   const [categories, setCategories] = useState([]);
   const [error, setError] = useState();
+  const navigate = useNavigate();
   function handelSubmit() {
     if (categories.length < 3) {
       setError("Minimum 3 category required");
       return;
     }
     localStorage.setItem(KEY, JSON.stringify([...categories]));
+    navigate("/home");
   }
 
   return (
