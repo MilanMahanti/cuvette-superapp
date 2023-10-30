@@ -1,3 +1,4 @@
+import NewsCard from "../components/NewsCard";
 import ProfileCard from "../components/ProfileCard";
 import WeatherCard from "../components/WeatherCard";
 import styles from "./Home.module.css";
@@ -7,6 +8,9 @@ function Home() {
       <div className={styles["left-side"]}>
         <ProfileCard />
         <WeatherCard />
+      </div>
+      <div className={styles["right-side"]}>
+        <NewsCard />
       </div>
     </div>
   );
