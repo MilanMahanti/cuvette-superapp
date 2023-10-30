@@ -1,9 +1,8 @@
 .container {
-  height: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  padding: 2rem 2rem;
+  padding: 1.4rem 1.5rem 1rem 1.5rem;
   color: #fff;
 }
 .current {
@@ -17,37 +16,37 @@
 
 .current img {
   display: block;
-  width: 90px;
-  height: 95px;
+  width: 6rem;
+  height: 6.5rem;
   margin: -2rem;
 }
 .current p {
-  font-size: 2.5rem;
+  font-size: 2rem;
   letter-spacing: 2px;
   font-weight: 400;
 }
 .temp {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 .middle {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
-  padding: 0 4rem;
+  gap: 2rem;
+  padding: 0 3rem;
   border-right: 1.4px solid #fff;
   border-left: 1.4px solid #fff;
 }
 .pressure {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
 }
 .pressure img {
-  width: 2rem;
-  height: 3.5rem;
+  width: 1.5rem;
+  height: 2.5rem;
 }
 .pressure p {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .wind {
   display: flex;
@@ -55,8 +54,8 @@
   gap: 2rem;
 }
 .wind img {
-  height: 3rem;
-  width: 4.6rem;
+  height: 2rem;
+  width: 3rem;
 }
 .humidity {
   display: flex;
@@ -64,15 +63,15 @@
   gap: 3.5rem;
 }
 .humidity img {
-  height: 3.6rem;
-  width: 3rem;
+  height: 2.3rem;
+  width: 2rem;
 }
 .data {
   display: flex;
   flex-direction: column;
-  font-size: 2rem;
-  gap: 3rem;
+  font-size: 1.5rem;
+  gap: 1rem;
 }
 .gap {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }

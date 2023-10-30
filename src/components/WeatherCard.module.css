@@ -1,5 +1,5 @@
 .card {
-  height: 40%;
+  height: 96%;
   border-radius: 2rem;
   background-color: #101744;
   display: flex;
@@ -11,12 +11,12 @@
   justify-content: space-around;
   align-items: center;
   background-color: #ff4ade;
-  padding: 1.5rem 3rem;
+  padding: 1rem 2rem;
   border-top-right-radius: 2rem;
   border-top-left-radius: 2rem;
 }
 .top {
   color: #fff;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2rem;
 }

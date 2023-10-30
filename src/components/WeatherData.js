@@ -44,14 +44,14 @@ function WeatherData() {
             <div className={styles.wind}>
               <img src={wind} alt="wind icon" />
               <p>
-                {WeatherData.current.wind_kph}kph <br />
+                {WeatherData.current.wind_kph}kph
                 <p className={styles.gap}>Wind</p>
               </p>
             </div>
             <div className={styles.humidity}>
               <img src={humidity} alt="humidity icon" />
               <p>
-                {WeatherData.current.humidity}% <br />
+                {WeatherData.current.humidity}%
                 <p className={styles.gap}>Humidity</p>
               </p>
             </div>
